@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "tags",
   "info": {
-    "name": "category",
+    "name": "tag",
     "description": ""
   },
   "options": {
@@ -14,12 +14,12 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "posts": {
       "collection": "post",
-      "via": "category"
+      "via": "tags",
+      "dominant": true
     }
   }
 }

@@ -29,6 +29,14 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "category": {
+      "via": "posts",
+      "model": "category"
+    },
+    "tags": {
+      "via": "posts",
+      "collection": "tag"
     }
   }
 }
